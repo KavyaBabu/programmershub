@@ -13,7 +13,7 @@ class LCSMemoisationTest {
         LCSMemoisation lcsMemoisation = new LCSMemoisation();
         String word1 = "abcde";
         String word2 = "dfe";
-        int lcsLEngth = lcsMemoisation.getLCS(word1, word2);
+        int lcsLEngth = lcsMemoisation.getLCSLength(word1, word2);
         assertEquals(lcsLEngth, 2);
 
     }
@@ -24,7 +24,7 @@ class LCSMemoisationTest {
         LCSMemoisation lcsMemoisation = new LCSMemoisation();
         String word1 = "abcde";
         String word2 = "";
-        int lcsLEngth = lcsMemoisation.getLCS(word1, word2);
+        int lcsLEngth = lcsMemoisation.getLCSLength(word1, word2);
         assertEquals(lcsLEngth, 0);
 
     }
@@ -36,7 +36,7 @@ class LCSMemoisationTest {
         LCSMemoisation lcsMemoisation = new LCSMemoisation();
         String word1 = "abcde";
         String word2 = "abcc";
-        int lcsLEngth = lcsMemoisation.getLCS(word1, word2);
+        int lcsLEngth = lcsMemoisation.getLCSLength(word1, word2);
         assertEquals(lcsLEngth, 3);
 
     }

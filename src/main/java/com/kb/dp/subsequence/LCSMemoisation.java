@@ -1,7 +1,7 @@
 package com.kb.dp.subsequence;
 
 public class LCSMemoisation {
-    public int getLCS(String word1, String word2) {
+    public int getLCSLength(String word1, String word2) {
         int word1Length = word1.length();
         int word2Length = word2.length();
         int[][] lookupMatrix = new int[word1Length +1][word2Length +1];
