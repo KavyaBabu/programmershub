@@ -15,7 +15,8 @@ class LCPalindromicSubSequenceMemoisationTest {
         LCPalindromicSubSequenceMemoisation lengthOfPalindromicSubsequnce = new LCPalindromicSubSequenceMemoisation();
         String word = "abdadhbj";
         String longestPalindromicSubSequence = lengthOfPalindromicSubsequnce.getLongestPalindromicSubsequence(word);
-        assertEquals(longestPalindromicSubSequence, "bdadbxxxx");
+        assertEquals(longestPalindromicSubSequence, "bdadb" +
+                "");
     }
 
     @Test
